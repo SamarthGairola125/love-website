@@ -4,10 +4,11 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>For My Love</title>
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Open+Sans&display=swap" rel="stylesheet">
   <style>
     body {
       margin: 0;
-      font-family: 'Segoe UI', sans-serif;
+      font-family: 'Open Sans', sans-serif;
       background-color: #fff0f5;
       color: #333;
       scroll-behavior: smooth;
@@ -18,8 +19,10 @@
       background-color: #ffe4e1;
     }
     header h1 {
-      font-size: 1.8rem;
+      font-size: 2rem;
+      font-family: 'Dancing Script', cursive;
       margin-bottom: 1rem;
+      color: #c71585;
     }
     .slideshow {
       display: flex;
@@ -27,58 +30,81 @@
       scroll-snap-type: x mandatory;
       gap: 1rem;
       padding: 1rem;
+      scroll-padding: 1rem;
     }
     .slideshow img {
       width: 300px;
       height: auto;
       border-radius: 1rem;
       scroll-snap-align: start;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s;
+    }
+    .slideshow img:hover {
+      transform: scale(1.05);
     }
     .section {
       padding: 2rem;
       text-align: center;
     }
+    .section h2 {
+      font-family: 'Dancing Script', cursive;
+      font-size: 2rem;
+      color: #c71585;
+    }
     .letter {
       background: #fff;
       padding: 2rem;
       margin: auto;
-      max-width: 600px;
+      max-width: 700px;
       border-radius: 1rem;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
       font-style: italic;
+      line-height: 1.6;
     }
     .grid {
       display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-      gap: 1rem;
-      max-width: 1000px;
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+      gap: 1.5rem;
+      max-width: 1100px;
       margin: auto;
       text-align: left;
+      padding: 1rem;
     }
     .grid div {
       background: #fff;
       padding: 1rem;
       border-radius: 1rem;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+      box-shadow: 0 2px 8px rgba(0,0,0,0.08);
     }
     .selfie {
       text-align: center;
       margin-top: 3rem;
     }
     .selfie img {
-      max-width: 200px;
+      max-width: 180px;
       border-radius: 50%;
-      border: 4px solid #ffb6c1;
+      border: 5px solid #ffb6c1;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+    .selfie h3 {
+      font-family: 'Dancing Script', cursive;
+      font-size: 1.5rem;
+      color: #ff69b4;
+      margin-top: 1rem;
     }
     footer {
       padding: 2rem;
       background: #fffaf0;
+      text-align: center;
+      font-style: italic;
+      color: #555;
     }
   </style>
 </head>
 <body>
   <header>
-    <h1>This entire website is a love letter from the biggest idiot in the universe—who somehow got lucky enough to meet you, and even luckier to still have a chance to fix things. 💌</h1>
+    <h1>This entire website is a love letter from the biggest idiot in the universe—who somehow got lucky enough to meet you and even luckier to still have a chance to fix things 💌</h1>
   </header>
 
   <!-- Slideshow -->
@@ -99,9 +125,9 @@
   <section class="section">
     <h2>Love Letter</h2>
     <div class="letter">
-      <p>Dear Love,<br><br>
-      I know I've hurt you, and for that, I'm deeply sorry. You are the light in my life, the smile that keeps me going, and the heart I never want to stop beating for. Every photo here is a memory I treasure. Every word is a hope to fix what I've broken. You deserve the world, and I want to spend the rest of my life giving it to you—starting with this small gesture of love.<br><br>
-      Forever yours,<br>
+      <p>Dear Love<br><br>
+      I know I've hurt you and for that I'm deeply sorry You are the light in my life the smile that keeps me going and the heart I never want to stop beating for Every photo here is a memory I treasure Every word is a hope to fix what I've broken You deserve the world and I want to spend the rest of my life giving it to you—starting with this small gesture of love<br><br>
+      Forever yours<br>
       The Idiot Who Loves You 💗</p>
     </div>
   </section>
@@ -110,47 +136,127 @@
   <section class="section">
     <h2>100 Compliments to the Most Beautiful Soul</h2>
     <div class="grid">
-      <div>Your smile makes the sun jealous.</div>
-      <div>You have the most mesmerizing eyes.</div>
-      <div>You’re the reason my heart beats faster.</div>
-      <div>Your laugh is the melody of my life.</div>
-      <div>You’re smarter than anyone I know.</div>
-      <div>Your heart is the purest I’ve ever felt.</div>
-      <div>Your hugs cure everything.</div>
-      <div>Your presence makes everything better.</div>
-      <div>You’re effortlessly elegant.</div>
-      <div>You're the poetry in my silence.</div>
-      <!-- Add more compliments up to 100 -->
+      <div>Your smile makes the sun jealous</div>
+      <div>You have the most mesmerizing eyes</div>
+      <div>You’re the reason my heart beats faster</div>
+      <div>Your laugh is the melody of my life</div>
+      <div>You’re smarter than anyone I know</div>
+      <div>Your heart is the purest I’ve ever felt</div>
+      <div>Your hugs cure everything</div>
+      <div>Your presence makes everything better</div>
+      <div>You’re effortlessly elegant</div>
+      <div>You're the poetry in my silence</div>
+      <div>Your kindness teaches me how to be better</div>
+      <div>You walk into a room and light it up</div>
+      <div>Your voice is my favorite sound</div>
+      <div>You make imperfections beautiful</div>
+      <div>Your touch is calming like home</div>
+      <div>You make love feel easy and real</div>
+      <div>You inspire me without even trying</div>
+      <div>Your laughter is my favorite song</div>
+      <div>You love with all your soul</div>
+      <div>You’re stronger than you know</div>
+      <div>Your resilience is unmatched</div>
+      <div>You radiate grace in everything you do</div>
+      <div>Your opinions matter to me more than anyone’s</div>
+      <div>You bring out the best in people</div>
+      <div>You dream fearlessly</div>
+      <div>Your compassion has no limits</div>
+      <div>You make vulnerability beautiful</div>
+      <div>You make broken things feel whole again</div>
+      <div>Your honesty is refreshing and rare</div>
+      <div>You see beauty where others see flaws</div>
+      <div>You’re irreplaceable in every way</div>
+      <div>You understand the little things that matter most</div>
+      <div>You don’t just exist—you shine</div>
+      <div>Your silence is peaceful not awkward</div>
+      <div>You give love so freely</div>
+      <div>Your empathy is a gift to this world</div>
+      <div>You are magic in human form</div>
+      <div>You speak from the heart always</div>
+      <div>You see the world with wonder</div>
+      <div>You handle chaos with calm</div>
+      <div>Your soul is deep and full of light</div>
+      <div>You challenge me to grow</div>
+      <div>You care more deeply than words can show</div>
+      <div>You are art not just beautiful but meaningful</div>
+      <div>You’re my favorite human on this planet</div>
+      <div>You’re my peace in the noise</div>
+      <div>You make me want to be worthy of your love</div>
+      <div>You’re a once in a lifetime kind of love</div>
+      <div>You’re not perfect but you’re perfect to me</div>
+      <div>You believe in people even when they don’t</div>
+      <div>You’ve shown me what love really means</div>
+      <div>You make the ordinary feel extraordinary</div>
+      <div>You’re thoughtful in the ways that count</div>
+      <div>Your patience is a quiet strength</div>
+      <div>You forgive even when it’s hard</div>
+      <div>You always try to see the good</div>
+      <div>You know how to lift others up</div>
+      <div>You find meaning in moments most miss</div>
+      <div>You’re the reason I believe in second chances</div>
+      <div>You listen with your heart</div>
+      <div>You make loyalty feel natural</div>
+      <div>You turn pain into strength</div>
+      <div>Your love is my home</div>
+      <div>You have a spirit that’s impossible to dim</div>
+      <div>You show up when it matters</div>
+      <div>Your energy is magnetic</div>
+      <div>You make the stars jealous</div>
+      <div>You’re the reason I smile randomly</div>
+      <div>You have an incredible sense of intuition</div>
+      <div>You love with no agenda</div>
+      <div>You’re deeply human and deeply good</div>
+      <div>You know how to be strong and gentle</div>
+      <div>You’re my anchor and my wings</div>
+      <div>You leave a little magic wherever you go</div>
+      <div>You remind me what matters</div>
+      <div>You are endlessly interesting</div>
+      <div>You make peace look powerful</div>
+      <div>You shine in your own unique way</div>
+      <div>You’re the kind of person others write poetry about</div>
+      <div>You never fake your feelings</div>
+      <div>You have a heart made of pure gold</div>
+      <div>You’re the calm in my chaos</div>
+      <div>You believe in love even when it’s hard</div>
+      <div>You see beauty in imperfections</div>
+      <div>You speak truth with kindness</div>
+      <div>You make loyalty look easy</div>
+      <div>You’re sunlight on a cloudy day</div>
+      <div>You’ve made me a better version of myself</div>
+      <div>You are unforgettable in the best way</div>
+      <div>You’re everything good I never knew I needed</div>
+      <div>You are loved more than words could say</div>
+      <div>You are my heart’s favorite story</div>
+      <div>You have the kind of soul that makes this world softer</div>
     </div>
   </section>
 
   <!-- Selfie & Subtitle -->
   <section class="selfie">
     <img src="IMG-20250524-WA0193.jpg" alt="Me">
-    <h3>The human version of a typo but hopelessly in love with you.</h3>
+    <h3>The human version of a typo but hopelessly in love with you</h3>
   </section>
 
   <!-- 100 Roasts -->
   <section class="section">
     <h2>100 Roasts of the Dummy Who Hurt You</h2>
     <div class="grid">
-      <div>If brains were currency, I’d still be in debt.</div>
-      <div>I once lost a staring contest to a mirror.</div>
-      <div>Even my reflection rolls its eyes at me.</div>
-      <div>I'm the reason instructions exist.</div>
-      <div>My WiFi signal is stronger than my decisions.</div>
-      <div>Common sense left me on read.</div>
-      <div>I trip over wireless signals.</div>
-      <div>I make cereal without milk and still mess it up.</div>
-      <div>Autocorrect gave up on me.</div>
-      <div>Mirrors file complaints when I walk by.</div>
-      <!-- Add more roasts up to 100 -->
+      <div>If brains were currency I’d still be in debt</div>
+      <div>I once lost a staring contest to a mirror</div>
+      <div>Even my reflection rolls its eyes at me</div>
+      <div>I'm the reason instructions exist</div>
+      <div>My WiFi signal is stronger than my decisions</div>
+      <div>Common sense left me on read</div>
+      <div>I trip over wireless signals</div>
+      <div>I make cereal without milk and still mess it up</div>
+      <div>Autocorrect gave up on me</div>
+      <div>Mirrors file complaints when I walk by</div>
     </div>
   </section>
 
   <footer>
-    <p style="text-align:center">Made with all my love, and a ton of regret. 💔❤️</p>
+    <p>Made with all my love and a ton of regret 💔❤️</p>
   </footer>
 </body>
 </html>
-
